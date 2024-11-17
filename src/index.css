@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 a.active{
-    background-color: #E7E7E7;
+    color: crimson;
 }

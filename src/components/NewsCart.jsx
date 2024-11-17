@@ -3,7 +3,8 @@ import { FaStar, FaEye, FaShareAlt, FaRegBookmark } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
-  const { title, rating, total_view, author, thumbnail_url, details, others_info } = news;
+  const { title, rating, total_view, author, image_url, details, others_info } = news;
+  // console.log(news);
 
   return (
     <div className="rounded-lg space-y-3 shadow-lg border border-gray-200 bg-white overflow-hidden">
@@ -27,10 +28,11 @@ const NewsCard = ({ news }) => {
       {/* Title and Thumbnail */}
       <h3 className="px-4 font-bold text-lg text-gray-900">{title}</h3>
       <img
-        src={thumbnail_url}
+        src={image_url}
         alt={title}
-        className="w-full object-cover my-2 mx-auto"
+        className="w-full px-4 object-cover rounded-lg my-2 mx-auto"
       />
+
 
       {/* Details */}
       <p className="px-4 pt-6 text-gray-700 text-sm line-clamp-2">{details}</p> {/* Using line-clamp for truncation */}
