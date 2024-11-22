@@ -21,7 +21,7 @@ const HomeLayout = () => {
            </nav>
            <main className='my-6 grid md:grid-cols-12 gap-6'>
             {/* Left Nav */}
-            <aside className='col-span-3'>
+            <aside className='col-span-6 md:col-span-3'>
                 <LeftNavbar></LeftNavbar>
             </aside>
 
@@ -31,7 +31,7 @@ const HomeLayout = () => {
             </section>
 
             {/* Right Nav  */}
-            <aside className='col-span-3'>
+            <aside className='col-span-6 md:col-span-3'>
                 <RightNavbar></RightNavbar>
             </aside>
            </main>
